@@ -45,7 +45,7 @@ public class OlxPage {
 
     @Step("Проверка текста на странице избранных товаров")
     public OlxPage checkVisibleText() {
-        $(byText("Избранные объявления")).shouldBe(visible);
+        $x("//h2[text() = 'Избранные объявления']").shouldBe(visible);
         return this;
     }
 
