@@ -17,7 +17,7 @@ public class OlxPage {
 
     @Step("Поиск товара {product}")
     public OlxPage searchProduct(String product) {
-        $("#headerSearch").setValue(product);
+        $("#headerSearch").setValue(product).click();
         return this;
     }
 
