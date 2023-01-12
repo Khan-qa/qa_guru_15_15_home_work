@@ -1,12 +1,8 @@
 package pages;
 
-import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
-import pages.components.TopMenuComponent;
 
 import static com.codeborne.selenide.Condition.visible;
-import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class OlxPage {
@@ -24,7 +20,7 @@ public class OlxPage {
 
     @Step("Открытие страницы с избранными товарами")
     public OlxPage openFavoritesPage() {
-        open("favorites/");
+        open("/favorites");
         return this;
     }
 
