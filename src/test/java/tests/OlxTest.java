@@ -48,7 +48,7 @@ public class OlxTest extends TestBaseConfiguration {
     }
 
     @Test
-    @DisplayName("Проверка добавленного товара в списке Избранных")
+    @DisplayName("Проверка текста на странице Избранных товаров")
     void checkFavoriteProducts() {
         olxPage.openMainPage()
                 .searchProduct(dateForTest.product)
