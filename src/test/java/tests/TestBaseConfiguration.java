@@ -14,7 +14,9 @@ public class TestBaseConfiguration {
     static void setUp() {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
-        Configuration.browserSize = "1920x1080";
+        Configuration.browser = System.getProperty("browser", "chrome");
+        Configuration.browserSize = System.getProperty("browser_size", "1920x1080");
+
         Configuration.baseUrl = "https://olx.kz";
 
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
