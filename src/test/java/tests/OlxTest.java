@@ -35,7 +35,6 @@ public class OlxTest extends TestBaseConfiguration {
     void productDescriptionTest() {
         olxPage.openMainPage()
                 .searchProduct(dateForTest.product)
-                .dismissCookiesBanner()
                 .openProductDetails();
     }
 
@@ -44,7 +43,6 @@ public class OlxTest extends TestBaseConfiguration {
     void addProductToFavorite() {
         olxPage.openMainPage()
                 .searchProduct(dateForTest.product)
-                .dismissCookiesBanner()
                 .openProductDetails()
                 .addingProductToFavorites();
     }
@@ -54,7 +52,6 @@ public class OlxTest extends TestBaseConfiguration {
     void checkFavoriteProducts() {
         olxPage.openMainPage()
                 .searchProduct(dateForTest.product)
-                .dismissCookiesBanner()
                 .openProductDetails()
                 .addingProductToFavorites()
                 .openFavoritesPage()
