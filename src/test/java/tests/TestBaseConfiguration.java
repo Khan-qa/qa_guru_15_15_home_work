@@ -15,13 +15,11 @@ public class TestBaseConfiguration {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
         Configuration.browserSize = "1920x1080";
-        Configuration.baseUrl = "https://kaspi.kz/";
+        Configuration.baseUrl = "https://olx.kz";
 
-        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
-
+       Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
         DesiredCapabilities capabilities = new DesiredCapabilities();
         Configuration.browserCapabilities = capabilities;
-
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
     }
