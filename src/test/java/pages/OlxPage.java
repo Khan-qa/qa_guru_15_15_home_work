@@ -38,7 +38,7 @@ public class OlxPage {
 
     @Step("Добавление товара в избранные")
     public OlxPage addingProductToFavorites() {
-        $x("//span[text()='Опубликовано']/following::div[1]").scrollTo().click();
+        $x("//span[text()='Опубликовано']/following::div[1]").scrollIntoView(true).click();
         return this;
     }
 
