@@ -27,7 +27,7 @@ public class GitHubMainPage {
 
     @Step("открытие страницы каспи магазина")
     public GitHubMainPage openPage() {
-        open("shop/");
+        open("shop");
 
         return this;
     }
