@@ -55,8 +55,7 @@ public class OlxTest extends TestBaseConfiguration {
                 .openProductDetails()
                 .addingProductToFavorites()
                 .openFavoritesPage()
-                .viewProductsInList()
-                .productListCheck();
+                .checkVisibleText();
 
     }
 }

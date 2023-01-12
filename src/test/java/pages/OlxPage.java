@@ -3,6 +3,7 @@ package pages;
 import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class OlxPage {
@@ -42,17 +43,10 @@ public class OlxPage {
         return this;
     }
 
-    @Step("просмотр товаров в виде списка")
-    public OlxPage viewProductsInList() {
-        $("#list").click();
+    @Step("Проверка текста на странице избранных товаров")
+    public OlxPage checkVisibleText() {
+        $(byText("Избранные объявления")).shouldBe(visible);
         return this;
     }
-
-    @Step("Проверка списка товаров")
-    public OlxPage productListCheck() {
-        $(".offer-wrapper").shouldHave(visible);
-        return this;
-    }
-
 
 }
