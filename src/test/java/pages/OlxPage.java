@@ -32,13 +32,13 @@ public class OlxPage {
 
     @Step("Открытие деталей товара")
     public OlxPage openProductDetails() {
-        $$("[data-testid='listing-grid']").filter(visible).first().click();
+        $$("[data-testid='listing-grid']").filter(visible).first().scrollIntoView("{block: \"center\"}").click();
         return this;
     }
 
     @Step("Добавление товара в избранные")
     public OlxPage addingProductToFavorites() {
-        $x("//span[text()='Опубликовано']/following::div[1]").scrollIntoView(true).click();
+        $x("//span[text()='Опубликовано']/following::div[1]").scrollIntoView("{block: \"center\"}").click();
         return this;
     }
 
