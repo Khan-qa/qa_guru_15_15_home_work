@@ -37,4 +37,26 @@ public class OlxTest extends TestBaseConfiguration {
                 .searchProduct(dateForTest.product)
                 .openProductDetails();
     }
+
+    @Test
+    @DisplayName("Добавление товара в список Избранные")
+    void addProductToFavorite() {
+        olxPage.openMainPage()
+                .searchProduct(dateForTest.product)
+                .openProductDetails()
+                .addingProductToFavorites();
+    }
+
+    @Test
+    @DisplayName("Проверка добавленного товара в списке Избранных")
+    void checkFavoriteProducts() {
+        olxPage.openMainPage()
+                .searchProduct(dateForTest.product)
+                .openProductDetails()
+                .addingProductToFavorites();
+        topMenuComponent.clickFavoritesButton();
+        olxPage.viewProductsInList()
+                .productListCheck();
+
+    }
 }
