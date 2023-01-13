@@ -1,5 +1,5 @@
 
-# Проект по автоматизации тестирования сайта
+# Проект по автоматизации тестирования сайта [OLX.KZ](https://olx.kz/)
 <p align="center">
 <a href="https://olx.kz"><img src="images\logo\OLX-logo.svg" width="150" height=150"  alt="OLX-logo"/></a>
 </p>
@@ -27,7 +27,7 @@
 <code><a href="https://selenide.org/"><img src="images/logo/Selenide.svg" width="50" height="50"  alt="Selenide"/></a></code>
 <code><a href="https://aerokube.com/selenoid/"><img src="images/logo/Selenoid.svg" width="50" height="50"  alt="Selenoid"/></a></code>
 <code><a href="https://github.com/allure-framework/"><img src="images/logo/Allure.svg" width="50" height="50"  alt="Allure"/></a></code>
-<code><a href="https://www.jenkins.io/"><img src="images/logo/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a></code>
+<code><a href="https://qameta.io/"><img src="images/logo/Allure_TO.svg" width="50" height="50"  alt="Allure_TO"/></a></code>
 </p>
 
 
